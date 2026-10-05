@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+    color: #1f2937;
+    background: #ffffff;
+}
+
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+    background: #111827;
+}
+
+.logo {
+    margin: 0;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 1.2rem;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background: #1d4ed8;
+    color: #ffffff;
+
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    padding: 24px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 24px;
+
+    text-align: center;
+
+    color: #ffffff;
+    background: #111827;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+}
