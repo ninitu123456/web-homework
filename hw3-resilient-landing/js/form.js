@@ -18,24 +18,28 @@ function renderState() {
     switch (state) {
 
         case 'idle':
+            submitButton.disabled = false;
             submitButton.textContent = 'Notify Me';
             message.textContent = '';
             break;
 
 
         case 'submitting':
+            submitButton.disabled = true;
             submitButton.textContent = 'Submitting...';
             message.textContent = 'Submitting your request...';
             break;
 
 
         case 'success':
+            submitButton.disabled = false;
             submitButton.textContent = 'Notify Me';
             message.textContent = 'Subscription successful.';
             break;
 
 
         case 'error':
+            submitButton.disabled = false;
             submitButton.textContent = 'Try Again';
             message.textContent = 'Something went wrong.';
             break;
@@ -69,7 +73,22 @@ form.addEventListener('submit', async (event) => {
 
     event.preventDefault();
 
-    const email = emailInput.value;
+
+    if (state === 'submitting') {
+        return;
+    }
+
+
+    const email =
+        emailInput.value.trim();
+
+
+    if (email === '') {
+        state = 'error';
+        renderState();
+        return;
+    }
+
 
     state = 'submitting';
 
