@@ -56,6 +56,20 @@ header {
     color: #ffffff;
 }
 
+.menu-button {
+    display: none;
+
+    padding: 10px 16px;
+
+    color: #ffffff;
+    background: #1d4ed8;
+
+    border: 0;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
 nav {
     display: flex;
     gap: 24px;
@@ -151,8 +165,20 @@ footer {
 @media (max-width: 600px) {
 
     header {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
         flex-direction: column;
-        gap: 15px;
+    }
+
+    nav[hidden] {
+        display: none;
     }
 
     .projects-container {
