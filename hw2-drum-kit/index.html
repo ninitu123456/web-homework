@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Drum Kit</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <main>
+
+        <h1>Drum Kit</h1>
+
+        <p>
+            Press a key or click a drum pad to play a sound.
+        </p>
+
+
+        <section
+            class="drum-kit"
+            aria-label="Drum pads"
+        >
+
+            <button
+                class="drum-pad"
+                data-key="a"
+                data-sound="web-homework\hw2-drum-kit\assets\sounds\khoamthanh-kick-bright-medium-504170.mp3"
+            >
+                <span class="key">A</span>
+                <span class="sound-name">Kick</span>
+            </button>
+
+
+            <button
+                class="drum-pad"
+                data-key="s"
+                data-sound="assets/sounds/snare.wav"
+            >
+                <span class="key">S</span>
+                <span class="sound-name">Snare</span>
+            </button>
+
+
+            <button
+                class="drum-pad"
+                data-key="d"
+                data-sound="assets/sounds/hihat.wav"
+            >
+                <span class="key">D</span>
+                <span class="sound-name">Hi-Hat</span>
+            </button>
+
+
+            <button
+                class="drum-pad"
+                data-key="f"
+                data-sound="assets/sounds/clap.wav"
+            >
+                <span class="key">F</span>
+                <span class="sound-name">Clap</span>
+            </button>
+
+        </section>
+
+
+        <section
+            class="recorder"
+            aria-label="Beat recorder controls"
+        >
+
+            <button id="record-button">
+                Start Recording
+            </button>
+
+            <button id="stop-button">
+                Stop
+            </button>
+
+            <button id="play-button">
+                Play Recording
+            </button>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
