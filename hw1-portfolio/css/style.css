@@ -16,6 +16,29 @@ body {
     background: #ffffff;
 }
 
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+
+    padding: 10px 16px;
+
+    background: #ffffff;
+    color: #111827;
+
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}
 
 /* Navigation */
 
