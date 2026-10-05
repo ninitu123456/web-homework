@@ -81,3 +81,53 @@ h1 {
     }
 
 }
+
+.signup-form {
+    max-width: 500px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+    gap: 12px;
+
+    text-align: left;
+}
+
+
+.signup-form label {
+    font-weight: bold;
+}
+
+
+.signup-form input {
+    width: 100%;
+
+    padding: 12px;
+
+    font: inherit;
+
+    border: 1px solid #6b7280;
+    border-radius: 6px;
+}
+
+
+.signup-form button {
+    padding: 12px 20px;
+
+    font: inherit;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+#form-message {
+    min-height: 24px;
+
+    margin: 0;
+
+    text-align: center;
+}
